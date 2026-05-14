@@ -17,6 +17,24 @@ Telegram-бот для мгновенных уведомлений о новых
 
 ---
 
+## 🔒 Безопасная версия (Secure)
+
+Если вы не хотите хранить API-ключи магазинов на чужих серверах — используйте **`bot_secure.py`**:
+
+- ✅ **API-ключи вводятся через Telegram** (`/setup`)
+- ✅ **Хранятся только в RAM** — при перезапуске исчезают
+- ✅ **Доступ только по username** — жёсткая авторизация
+- ✅ **Никаких файлов с секретами** на диске
+
+```bash
+python bot_secure.py
+# В Telegram: /setup → ввести ключи → /run
+```
+
+Подробнее: [`SECURITY.md`](./SECURITY.md) | [`config_secure.py`](./config_secure.py)
+
+---
+
 ## 📋 Структура проекта
 
 ```
@@ -118,7 +136,7 @@ python bot.py
 | `YM_API_KEY` | API-ключ Яндекс Маркета | `AQVNxxxx...` |
 | `YM_CAMPAIGN_IDS` | ID кампаний через запятую | `12345678,87654321` |
 | `YM_CHECK_INTERVAL` | Период проверки YM (сек) | `60` |
-| `RCRM_URL` | URL вашей RetailCRM | `https://butoni.retailcrm.ru` |
+| `RCRM_URL` | URL вашей RetailCRM | `https://your-shop.retailcrm.ru` |
 | `RCRM_API_KEY` | API-ключ RetailCRM | `abc123...` |
 | `RCRM_CHECK_INTERVAL` | Период проверки CRM (сек) | `60` |
 
@@ -129,7 +147,7 @@ python bot.py
 ### Яндекс Маркет
 ```
 📦 НОВЫЙ ЗАКАЗ Яндекс Маркет
-🏪 Магазин: BODY KULT (кампания 12345678)
+🏪 Магазин: Яндекс Маркет (кампания 12345678)
 ━━━━━━━━━━━━━━━
 🆔 Номер: 123456789
 📊 Статус: PROCESSING
@@ -146,7 +164,7 @@ python bot.py
 
 ### RetailCRM
 ```
-🛒 НОВЫЙ ЗАКАЗ BUTONI (RetailCRM)
+🛒 НОВЫЙ ЗАКАЗ RetailCRM
 ━━━━━━━━━━━━━━━
 🆔 Номер: A-1234
 📊 Статус: new

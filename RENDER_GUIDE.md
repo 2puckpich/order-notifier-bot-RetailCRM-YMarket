@@ -127,7 +127,7 @@ git push -u origin main
 | `YM_API_KEY` | `AQVNxxxx...` | API-ключ Яндекс Маркета |
 | `YM_CAMPAIGN_IDS` | `12345678,87654321` | ID магазинов через запятую |
 | `YM_CHECK_INTERVAL` | `60` | Проверка каждую минуту |
-| `RCRM_URL` | `https://butoni.retailcrm.ru` | URL твоей CRM |
+| `RCRM_URL` | `https://your-shop.retailcrm.ru` | URL твоей CRM |
 | `RCRM_API_KEY` | `abc123def456...` | API-ключ RetailCRM |
 | `RCRM_CHECK_INTERVAL` | `60` | Проверка каждую минуту |
 
@@ -140,7 +140,7 @@ Environment Variables:
   YM_API_KEY=AQVN0B_xxxx...
   YM_CAMPAIGN_IDS=12345678,87654321
   YM_CHECK_INTERVAL=60
-  RCRM_URL=https://butoni.retailcrm.ru
+  RCRM_URL=https://your-shop.retailcrm.ru
   RCRM_API_KEY=abc123def456...
   RCRM_CHECK_INTERVAL=60
 ```
@@ -160,12 +160,12 @@ Environment Variables:
 
    ```
    ==> Running 'python bot.py'
-   14:30:01 | INFO | order-bot | Бот запущен. Источники: ['Яндекс Маркет (BODY KULT)', 'RetailCRM (BUTONI)']
+   14:30:01 | INFO | order-bot | Бот запущен. Источники: ['Яндекс Маркет', 'RetailCRM']
    ```
 
 3. Проверь Telegram — должен прийти запускающий бота сообщение:
    > ✅ **Бот запущен**
-   > Источники: Яндекс Маркет (BODY KULT), RetailCRM (BUTONI)
+   > Источники: Яндекс Маркет, RetailCRM
 
 ---
 

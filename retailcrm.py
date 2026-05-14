@@ -159,7 +159,7 @@ class RetailCRMClient:
             payment_type = payments[0].get("type", "")
 
         message = (
-            f"🛒 <b>НОВЫЙ ЗАКАЗ BUTONI (RetailCRM)</b>\n"
+            f"🛒 <b>НОВЫЙ ЗАКАЗ RetailCRM</b>\n"
             f"━━━━━━━━━━━━━━━\n"
             f"🆔 Номер: <code>{order_number}</code>\n"
             f"📊 Статус: {status_text}\n"

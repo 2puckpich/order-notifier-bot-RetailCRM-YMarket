@@ -195,7 +195,7 @@ class YandexMarketClient:
 
         message = (
             f"📦 <b>НОВЫЙ ЗАКАЗ Яндекс Маркет</b>\n"
-            f"🏪 Магазин: BODY KULT (кампания {campaign_id})\n"
+            f"🏪 Магазин: Яндекс Маркет (кампания {campaign_id})\n"
             f"━━━━━━━━━━━━━━━\n"
             f"🆔 Номер: <code>{order_id}</code>\n"
             f"📊 Статус: {status}\n"

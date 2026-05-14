@@ -2,8 +2,8 @@
 Telegram-бот для уведомлений о новых заказах.
 
 Источники:
-- Яндекс Маркет (BODY KULT) — через API партнёра
-- RetailCRM (BUTONI) — через API v5
+- Яндекс Маркет — через API партнёра
+- RetailCRM — через API v5
 
 Алгоритм:
 1. Периодический опрос API каждого источника
@@ -225,9 +225,9 @@ class OrderNotifierBot:
         # Тестовое сообщение при старте
         sources = []
         if self.ym_client:
-            sources.append("Яндекс Маркет (BODY KULT)")
+            sources.append("Яндекс Маркет")
         if self.rcrm_client:
-            sources.append("RetailCRM (BUTONI)")
+            sources.append("RetailCRM")
         
         start_msg = (
             f"✅ <b>Бот запущен</b>\n"
